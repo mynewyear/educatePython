@@ -1,0 +1,12 @@
+import sys
+
+def findMinimum(arr):
+  # Write your code here
+  min = sys.maxsize
+  for elem in arr:
+    if elem < min:
+      min = elem
+  return min
+
+
+print(findMinimum([-5,0, 1, 2, 3]))
